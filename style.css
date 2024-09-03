@@ -46,7 +46,7 @@ input {
     color: #333;
 }
 
-/* Botón */
+/* Botón general */
 button {
     padding: 10px;
     background-color: #4CAF50;
@@ -56,6 +56,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 10px;
 }
 
 button:hover {
@@ -66,8 +67,8 @@ button:hover {
 #resultTable {
     margin-top: 20px;
     width: 100%;
-    max-width: 600px; /* Limita el ancho máximo de la tabla */
-    margin: 0 auto; /* Centra la tabla */
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 table {
@@ -96,4 +97,20 @@ td {
 
 tr:hover {
     background-color: #f9f9f9;
+}
+
+/* Estilo específico para el botón de copiar */
+button[onclick="copyTable()"] {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[onclick="copyTable()"]:hover {
+    background-color: #0056b3;
 }
