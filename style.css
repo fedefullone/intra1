@@ -121,3 +121,12 @@ button[onclick="copyTable()"] {
 button[onclick="copyTable()"]:hover {
     background-color: #0056b3;
 }
+
+/* Estilo para el logotipo */
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Centrar la imagen y agregar espacio debajo */
+    max-width: 100px; /* Ajustar el tamaño según sea necesario */
+    height: auto;
+}
+
