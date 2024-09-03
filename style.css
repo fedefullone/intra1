@@ -18,6 +18,14 @@ h1 {
     text-align: center;
 }
 
+/* Contenedor para el formulario y la tabla */
+.container {
+    display: flex;
+    gap: 20px; /* Espacio entre el formulario y la tabla */
+    align-items: flex-start; /* Alinea ambos elementos al inicio */
+    margin-top: 20px;
+}
+
 /* Estilos del formulario */
 form {
     display: flex;
@@ -65,16 +73,14 @@ button:hover {
 
 /* Estilos de la tabla */
 #resultTable {
-    margin-top: 20px;
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -109,6 +115,7 @@ button[onclick="copyTable()"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 button[onclick="copyTable()"]:hover {
